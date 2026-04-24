@@ -7,13 +7,13 @@ document.getElementById('login_btn').addEventListener('click', function (event) 
     if (accountNumber.length === 11) {
         console.log('number okey');
         if (convertedPin == 1234) {
-            console.log('pin okey');
+            window.location.href = "./main.html"
         }
         else {
-            console.log('pin wrong');
+            alert('Pin wrong');
         }
     }
     else {
-        console.log("invalid");
+        alert("Need valid account number");
     }
 })
