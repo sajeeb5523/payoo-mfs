@@ -17,7 +17,7 @@
             <nav class="flex justify-around items-center">
                 <img class="w-16" src="assets/Group.png" alt="">
                 <div>
-                    <h1 class="text-3xl font-bold">$45000</h1>
+                    <h1 class="text-3xl font-bold">$ <span id="main_balance">45000</span></h1>
                     <p>Available Balance</p>
                 </div>
                 <button class="btn">Logout</button>
@@ -66,9 +66,48 @@
                         <h3>Transactions</h3>
                     </div>
                 </div>
+
+                <!-- add money section -->
+                <section>
+                    <h2 class="mx-2 mt-8 text-2xl font-bold">Add Money</h2>
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+
+                            <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                    <legend>Select A Bank</legend>
+                                    <select class="select rounded-full">
+                                        <option disabled selected>Select bank</option>
+                                        <option value="bkash">Bkash</option>
+                                        <option value="nagad">Nagad</option>
+                                        <option value="roket">Roket</option>
+                                        <option value="cellfin">Cellfin</option>
+                                        <option value="upay">Upay</option>
+                                    </select>
+                                    <fieldset class="fieldset">
+                                        <label>Bank Account Number</label>
+                                        <input type="email" class="input rounded-full"
+                                            placeholder="Enter 11 digit account number" />
+                                        <label>Amount to Add</label>
+                                        <input id="amount" type="email" class="input rounded-full"
+                                            placeholder="Add Amount to withdraw" />
+                                        <label>Pin Number</label>
+                                        <input id="pin" type="text" class="input rounded-full"
+                                            placeholder="Enter 4 digit pin number" />
+                                        <button id="add_money" class="btn text-white bg-[#0874F2] mt-4 rounded-full">Add
+                                            Money</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </header>
     </section>
+
+    <script src="script/addMoney.js"></script>
+
 </body>
 
 </html>
