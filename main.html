@@ -63,7 +63,8 @@
                     </div>
 
                     <!-- transactions -->
-                    <div class="box cursor-pointer shadow-sm border border-gray-300 p-4 text-center rounded-lg">
+                    <div id="transaction_box"
+                        class="box cursor-pointer shadow-sm border border-gray-300 p-4 text-center rounded-lg">
                         <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
                         <h3>Transactions</h3>
                     </div>
@@ -132,12 +133,21 @@
                     </div>
                 </section>
 
+                <!-- transaction history -->
+                <section id="transaction_history">
+                    <h2 class="mx-2 mt-8 text-2xl font-bold">Transaction History</h2>
+                    <div id="transaction_container">
+
+                    </div>
+                </section>
+
         </header>
     </section>
 
     <script src="script/addMoney.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/transactionHistory.js"></script>
 
 </body>
 
