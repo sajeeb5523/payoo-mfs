@@ -79,20 +79,20 @@
                             <div class="card w-full max-w-sm shrink-0 shadow-2xl">
                                 <div class="card-body">
                                     <legend>Select A Bank</legend>
-                                    <select class="select rounded-full">
+                                    <select id="bank_name" class="select rounded-full">
                                         <option disabled selected>Select bank</option>
-                                        <option value="bkash">Bkash</option>
-                                        <option value="nagad">Nagad</option>
-                                        <option value="roket">Roket</option>
-                                        <option value="cellfin">Cellfin</option>
-                                        <option value="upay">Upay</option>
+                                        <option value="Bkash">Bkash</option>
+                                        <option value="Nagad">Nagad</option>
+                                        <option value="Roket">Roket</option>
+                                        <option value="Cellfin">Cellfin</option>
+                                        <option value="Upay">Upay</option>
                                     </select>
                                     <fieldset class="fieldset">
                                         <label>Bank Account Number</label>
-                                        <input type="email" class="input rounded-full"
+                                        <input id="add_account_number" type="number" class="input rounded-full"
                                             placeholder="Enter 11 digit account number" />
                                         <label>Amount to Add</label>
-                                        <input id="amount" type="email" class="input rounded-full"
+                                        <input id="amount" type="number" class="input rounded-full"
                                             placeholder="Add Amount to withdraw" />
                                         <label>Pin Number</label>
                                         <input id="pin" type="text" class="input rounded-full"
@@ -115,10 +115,10 @@
                                 <div class="card-body">
                                     <fieldset class="fieldset">
                                         <label>Agent Number</label>
-                                        <input type="email" class="input rounded-full"
+                                        <input id="cashout_account_number" type="number" class="input rounded-full"
                                             placeholder="Enter 11 digit number" />
                                         <label>Amount</label>
-                                        <input id="cashout_amount" type="email" class="input rounded-full"
+                                        <input id="cashout_amount" type="number" class="input rounded-full"
                                             placeholder="Enter amount to withdraw" />
                                         <label>Pin Number</label>
                                         <input id="cashout_pin" type="text" class="input rounded-full"
