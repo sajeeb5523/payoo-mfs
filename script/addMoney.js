@@ -18,7 +18,7 @@ document.getElementById('add_money')
                 console.log('add kora jabe na');
             }
         }
-        else{
+        else {
             alert("Enter valid pin and some money")
         }
     })
