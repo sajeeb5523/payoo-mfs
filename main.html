@@ -45,7 +45,8 @@
                     </div>
 
                     <!-- transfer money -->
-                    <div class="box cursor-pointer shadow-sm border border-gray-300 p-4 text-center rounded-lg">
+                    <div id="transfer_money_box"
+                        class="box cursor-pointer shadow-sm border border-gray-300 p-4 text-center rounded-lg">
                         <img class="w-8 mx-auto" src="assets/money1.png" alt="">
                         <h3>Transfer Money</h3>
                     </div>
@@ -97,7 +98,8 @@
                                         <label>Pin Number</label>
                                         <input id="pin" type="text" class="input rounded-full"
                                             placeholder="Enter 4 digit pin number" />
-                                        <button id="add_money_btn" class="btn text-white bg-[#0874F2] mt-4 rounded-full">Add
+                                        <button id="add_money_btn"
+                                            class="btn text-white bg-[#0874F2] mt-4 rounded-full">Add
                                             Money</button>
                                     </fieldset>
                                 </div>
@@ -141,6 +143,33 @@
                     </div>
                 </section>
 
+                <!-- transfer money -->
+                <section id="transfer_money">
+                    <h2 class="mx-2 mt-8 text-2xl font-bold">Transfer Money</h2>
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                            <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                    <fieldset class="fieldset">
+                                        <label>User Account Number</label>
+                                        <input id="transfer_account_number" type="number" class="input rounded-full"
+                                            placeholder="Enter 11 digit account number" />
+                                        <label>Amount</label>
+                                        <input id="transfer_amount" type="number" class="input rounded-full"
+                                            placeholder="Enter amount to transfer" />
+                                        <label>Pin Number</label>
+                                        <input id="transfer_pin" type="text" class="input rounded-full"
+                                            placeholder="Enter 4 digit pin number" />
+                                        <button id="transfer_money_btn"
+                                            class="btn text-white bg-[#0874F2] mt-4 rounded-full">Transfer
+                                            Money</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
         </header>
     </section>
 
@@ -148,6 +177,7 @@
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
     <script src="script/transactionHistory.js"></script>
+    <script src="script/transferMoney.js"></script>
 
 </body>
 
