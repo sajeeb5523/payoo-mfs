@@ -5,7 +5,7 @@ document.getElementById('login_btn').addEventListener('click', function (event) 
     const convertedPin = parseInt(pin);
 
     if (accountNumber.length === 11) {
-        console.log('number okey');
+        // console.log('number okey');
         if (convertedPin === 1234) {
             sessionStorage.setItem('loggedIn', 'true');
             window.location.replace('./main.html');
