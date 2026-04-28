@@ -20,7 +20,7 @@
                     <h1 class="text-3xl font-bold">$ <span id="main_balance">45000</span></h1>
                     <p>Available Balance</p>
                 </div>
-                <button class="btn">Logout</button>
+                <button id="logout_btn" class="btn">Logout</button>
             </nav>
 
             <!-- section -->
@@ -173,11 +173,27 @@
         </header>
     </section>
 
+    <script>
+        function ensureLoggedIn() {
+            if (!sessionStorage.getItem('loggedIn')) {
+                window.location.replace('index.html');
+            }
+        }
+        ensureLoggedIn();
+        window.addEventListener('pageshow', function (event) {
+            if (!sessionStorage.getItem('loggedIn')) {
+                window.location.replace('index.html');
+            }
+        });
+    </script>
+
+    <!-- js file -->
     <script src="script/addMoney.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
     <script src="script/transactionHistory.js"></script>
     <script src="script/transferMoney.js"></script>
+    <script src="script/logout.js"></script>
 
 </body>
 

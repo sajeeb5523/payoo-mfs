@@ -6,8 +6,9 @@ document.getElementById('login_btn').addEventListener('click', function (event) 
 
     if (accountNumber.length === 11) {
         console.log('number okey');
-        if (convertedPin == 1234) {
-            window.location.href = "./main.html"
+        if (convertedPin === 1234) {
+            sessionStorage.setItem('loggedIn', 'true');
+            window.location.replace('./main.html');
         }
         else {
             alert('Pin wrong');
